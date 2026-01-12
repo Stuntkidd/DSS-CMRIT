@@ -17,27 +17,29 @@ const teamMembers = [
     imageUrl: 'https://i.postimg.cc/Nj3r1KvD/Whats-App-Image-2025-10-21-at-22-08-26.jpg',
     socials: { linkedin: 'https://www.linkedin.com/in/pradeeptha-ch-943450335/', twitter: '#', email: 'ch.pradeeptha@dss.in' },
   },
+  
   {
     id: 2,
-    name: 'S.L.N. Prasanna Kumar',
-    title: 'President',
-    imageUrl: 'https://i.postimg.cc/76MffQNR/IMG-20251012-215845055.jpg',
-    socials: { linkedin: 'https://www.linkedin.com/in/sriramoji-prasanna-kuamrkumar-kumar-8333a032b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', twitter: '#', email: 'sln.prasanna@dss.in' },
-  },
-  {
-    id: 3,
-    name: 'M. Laxmi Prasanna',
-    title: 'Vice President',
-    imageUrl: 'https://i.postimg.cc/X7FWrqxY/Whats-App-Image-2025-10-22-at-19-50-11.jpg',
-    socials: { linkedin: 'https://www.linkedin.com/in/laxmi-prasanna-659973332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', twitter: '#', email: 'm.laxmi@dss.in' },
-  },
-  {
-    id: 8,
     name: 'P V Yashwanth',
     title: 'Projects Lead',
     imageUrl: 'https://i.postimg.cc/W3ZnDjDQ/Whats-App-Image-2025-10-21-at-19-44-03-b253a3ed.jpg',
     socials: { linkedin: 'https://www.linkedin.com/in/yashwanth-paleti', twitter: '#', email: 'pv.yashwanth@dss.in' },
   },
+  {
+    id: 3,
+    name: 'Sri Nag Charan',
+    title: 'Treasurer',
+    imageUrl: 'https://i.postimg.cc/cH5S3pym/Whats-App-Image-2026-01-12-at-12-05-43-PM.jpg',
+    socials: { linkedin: 'https://www.linkedin.com/in/nammina-sri-nag-charan-6b928732b', twitter: '#', email: 'srinagcharanyadav@gmail.com' },
+  },
+  {
+    id: 4,
+    name: 'S Jahnavi',
+    title: 'Outreach coordinator',
+    imageUrl: 'https://i.postimg.cc/wj0pD6Tv/Whats-App-Image-2025-10-24-at-12-24-34-caf387e2.jpg',
+    socials: { linkedin: 'https://www.linkedin.com/in/jahnavi-sagaboina-53657a380', twitter: '#', email: 's.jahnavi@dss.in' },
+  }
+
 ];
 
 
