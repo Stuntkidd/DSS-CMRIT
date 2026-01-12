@@ -17,63 +17,65 @@ const teamMembers = [
     imageUrl: 'https://i.postimg.cc/Nj3r1KvD/Whats-App-Image-2025-10-21-at-22-08-26.jpg',
     socials: { linkedin: 'https://www.linkedin.com/in/pradeeptha-ch-943450335/', twitter: '#', email: 'ch.pradeeptha@dss.in' },
   },
+
   {
     id: 2,
-    name: 'S.L.N. Prasanna Kumar',
-    title: 'President',
-    imageUrl: 'https://i.postimg.cc/76MffQNR/IMG-20251012-215845055.jpg',
-    socials: { linkedin: 'https://www.linkedin.com/in/sriramoji-prasanna-kuamrkumar-kumar-8333a032b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', twitter: '#', email: 'sln.prasanna@dss.in' },
-  },
-  {
-    id: 3,
-    name: 'M. Laxmi Prasanna',
-    title: 'Vice President',
-    imageUrl: 'https://i.postimg.cc/X7FWrqxY/Whats-App-Image-2025-10-22-at-19-50-11.jpg',
-    socials: { linkedin: 'https://www.linkedin.com/in/laxmi-prasanna-659973332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', twitter: '#', email: 'm.laxmi@dss.in' },
-  },
-  {
-    id: 8,
     name: 'P V Yashwanth',
     title: 'Projects Lead',
     imageUrl: 'https://i.postimg.cc/W3ZnDjDQ/Whats-App-Image-2025-10-21-at-19-44-03-b253a3ed.jpg',
     socials: { linkedin: 'https://www.linkedin.com/in/yashwanth-paleti', twitter: '#', email: 'pv.yashwanth@dss.in' },
   },
+  {
+    id: 3,
+    name: 'Sri Nag Charan',
+    title: 'Treasurer',
+    imageUrl: 'https://i.postimg.cc/cH5S3pym/Whats-App-Image-2026-01-12-at-12-05-43-PM.jpg',
+    socials: { linkedin: 'https://www.linkedin.com/in/nammina-sri-nag-charan-6b928732b', twitter: '#', email: 'srinagcharanyadav@gmail.com' },
+  },
+  {
+    id: 4,
+    name: 'S Jahnavi',
+    title: 'Outreach coordinator',
+    imageUrl: 'https://i.postimg.cc/wj0pD6Tv/Whats-App-Image-2025-10-24-at-12-24-34-caf387e2.jpg',
+    socials: { linkedin: 'https://www.linkedin.com/in/jahnavi-sagaboina-53657a380', twitter: '#', email: 's.jahnavi@dss.in' },
+  }
+
 ];
 
 
 export default function Home() {
-  
+
   // Data definitions moved INSIDE the Home component function
   const joinBenefits = [
-    { 
-      title: "Skill Enhancement", 
-      description: "Gain hands-on experience with cutting-edge tools and technologies through workshops and projects.", 
+    {
+      title: "Skill Enhancement",
+      description: "Gain hands-on experience with cutting-edge tools and technologies through workshops and projects.",
       span: "md:col-span-2",
       bgStyle: { background: 'rgba(255, 255, 255, 0.05)' } // Soft dark background 1
     },
-    { 
-      title: "Networking Opportunities", 
-      description: "Connect with peers, faculty, and industry professionals, expanding your professional network.", 
+    {
+      title: "Networking Opportunities",
+      description: "Connect with peers, faculty, and industry professionals, expanding your professional network.",
       span: "md:col-span-3",
       bgStyle: { background: 'rgba(0, 0, 0, 0.2)' } // Slightly darker soft background
     },
-    { 
-      title: "Career Development", 
-      description: "Access resources and guidance for internships, placements, and further studies in data science.", 
+    {
+      title: "Career Development",
+      description: "Access resources and guidance for internships, placements, and further studies in data science.",
       span: "md:col-span-3",
       bgStyle: { background: 'rgba(255, 255, 255, 0.08)' } // Lighter soft background
     },
-    { 
-      title: "Community Building", 
-      description: "Be part of a supportive and collaborative community that shares your passion for data.", 
+    {
+      title: "Community Building",
+      description: "Be part of a supportive and collaborative community that shares your passion for data.",
       span: "md:col-span-2",
       bgStyle: { background: 'rgba(0, 0, 0, 0.3)' } // Darkest soft background
     },
-    { 
-      title: "Knowledge Sharing", 
-      description: "Participate in discussions, seminars, and hackathons to deepen your understanding and share insights.", 
+    {
+      title: "Knowledge Sharing",
+      description: "Participate in discussions, seminars, and hackathons to deepen your understanding and share insights.",
       span: "md:col-span-5", // Full-width feature card
-      bgStyle: { background: 'color-mix(in oklab, var(--accent) 15%, #0a0a0a)', border: '1px solid var(--accent)' } 
+      bgStyle: { background: 'color-mix(in oklab, var(--accent) 15%, #0a0a0a)', border: '1px solid var(--accent)' }
     },
   ];
 
@@ -86,7 +88,7 @@ export default function Home() {
     { type: "Mentorship", description: "Structured programs connecting junior members with senior students and industry professionals for guidance and support." },
     { type: "Content Creation", description: "To elevate the college’s standing, members will create and share tutorials and articles on data science and related topics. This initiative will boost the club’s online presence and reputation as a leader." },
   ];
-  
+
   const activityOutline = [
     {
       pillar: "Learning & Development",
@@ -120,7 +122,7 @@ export default function Home() {
 
   const magazineContent = {
     release: 'Udbhav 2025',
-    tagline: 'A comprehensive collection of insights and highlights from the Data Science Society.', 
+    tagline: 'A comprehensive collection of insights and highlights from the Data Science Society.',
     insideThisIssue: [
       // College & Administration
       'College Overview',
@@ -160,27 +162,27 @@ export default function Home() {
   // --- NEW: LATEST NEWS DATA (Retained for easy reference) ---
   const latestNews = [
     {
-        id: 1,
-        title: "Udbhav 2025: Magazine Release",
-        description: "Explore the latest articles, projects, and interviews from the DSS community in our official publication.",
-        tag: "NEW",
-        link: "https://udhbhv-dss-chronicle.vercel.app/",
-        date: "October 24, 2025",
+      id: 1,
+      title: "Udbhav 2025: Magazine Release",
+      description: "Explore the latest articles, projects, and interviews from the DSS community in our official publication.",
+      tag: "NEW",
+      link: "https://udhbhv-dss-chronicle.vercel.app/",
+      date: "October 24, 2025",
     },
     {
-        id: 2,
-        title: "Live CodeX: Inter-college Coding Challenge",
-        description: "Join the live-streamed Inter-college Coding Challenge and test your skills against the best data scientists.",
-        tag: "LIVE",
-        link: "https://live-codex-reveal.vercel.app/",
-        date: "October 24, 2025",
+      id: 2,
+      title: "Live CodeX: Inter-college Coding Challenge",
+      description: "Join the live-streamed Inter-college Coding Challenge and test your skills against the best data scientists.",
+      tag: "LIVE",
+      link: "https://live-codex-reveal.vercel.app/",
+      date: "October 24, 2025",
     },
   ];
 
   const featuredNews = latestNews[0]; // Udbhav Magazine
   const secondaryNews = latestNews[1]; // Live CodeX
   // --- END NEW DATA ---
-  
+
   // Removed unused const: const socialProofWords = [...]
 
   // The SocialProof component logic was already removed.
@@ -194,63 +196,91 @@ export default function Home() {
             "radial-gradient(closest-side, var(--accent), transparent 60%)",
         }} />
       </div>
-
-      {/* HERO SECTION - Headings Highlighted */}
-      <section className="pt-8 pb-12 sm:pt-12 sm:pb-16 w-full"> 
-        <div className="mx-0">
+      <section className="w-full bg-[#0a0a0a] pt-2 pb-10">
+        <div className="w-full px-0 sm:px-4 lg:px-6">
           <div
-            className="relative isolate overflow-hidden rounded-[3rem] text-center py-24 sm:py-32 shadow-2xl"
+            className="relative isolate overflow-hidden w-full flex flex-col items-center justify-center text-center px-6 py-16 sm:py-20 sm:rounded-[2.5rem] lg:rounded-[3.5rem]"
             style={{
-              background: 'var(--accent)',
+              background: `var(--accent)`,
             }}
           >
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"> 
-              <p className="text-md font-semibold mb-4 tracking-wider uppercase text-gray-900">
-                “WHERE <span className='text-gray-800'>IDEAS</span> MEET <span className='text-gray-800'>ACTION</span>”
-              </p>
-              <h1 className="text-5xl sm:text-7xl font-extrabold tracking-tighter text-gray-900">
-                <span className="text-gray-900">Innovate.</span> <span className="text-gray-800">Analyze. Lead.</span>
-              </h1>
-              <p className="mt-6 text-lg text-gray-800 max-w-3xl mx-auto">
-                Our motto reflects our core values: to inspire innovative thinking, encourage rigorous data
-                analysis, and empower students to become leaders in the data science and other domains.
-              </p>
-              <div className="mt-10 flex items-center justify-center gap-4">
-                <a href="/join" className="rounded-full px-7 py-3 text-lg font-medium bg-gray-900 text-white hover:bg-gray-700 transition">Join the Club</a>
-                <a 
-        href="/events" 
-        // Corrected text color to black/dark for visibility on the bright green hero
-        className="rounded-full px-7 py-3 text-lg font-medium border-2 border-gray-900 text-gray-900 hover:bg-gray-100 transition"
-    >
-        View Events
-    </a>
+            {/* 1. TECHNICAL GRID - Reduced opacity for subtle texture */}
+            <div
+              className="absolute inset-0 opacity-[0.08] [mask-image:radial-gradient(circle_at_center,white,transparent_85%)]"
+              style={{
+                backgroundImage: `linear-gradient(to right, black 1px, transparent 1px), linear-gradient(to bottom, black 1px, transparent 1px)`,
+                backgroundSize: '45px 45px'
+              }}
+            />
+
+            <div className="relative z-10 w-full max-w-6xl">
+              {/* Compact Monospace Badge */}
+              <div className="mb-6 inline-block">
+                <p className="font-mono text-[9px] sm:text-xs font-bold uppercase tracking-[0.3em] text-gray-900 bg-black/5 px-3 py-1.5 rounded-full border border-black/10">
+                  STRATEGY // ANALYSIS // ACTION
+                </p>
               </div>
+
+              {/* Scaled Heading - High impact, less vertical space */}
+              <h1 className="text-[11vw] sm:text-[8vw] lg:text-[90px] font-[900] tracking-tighter text-gray-950 leading-[0.85] uppercase">
+                Innovate<span className="opacity-20">.</span> Analyze<span className="opacity-20">.</span> Lead<span className="opacity-20">.</span>
+              </h1>
+
+              {/* Minimalist description - One line on desktop for height reduction */}
+              <p className="mt-6 text-base sm:text-lg text-gray-900/70 max-w-2xl mx-auto font-medium leading-relaxed">
+                The hub for data science at CMRIT. <span className="text-black font-bold">Building the future</span> through code and community.
+              </p>
+
+              {/* Action Block - More compact padding */}
+              <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
+                <a
+                  href="/join"
+                  className="w-full sm:w-auto bg-gray-900 text-white px-9 py-3.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all hover:bg-black hover:-translate-y-0.5 active:scale-95 shadow-xl shadow-black/10"
+                >
+                  Join Society
+                </a>
+
+                <a
+                  href="/events"
+                  className="group flex items-center gap-2 text-gray-950 font-bold text-xs uppercase tracking-widest"
+                >
+                  Explore Events
+                  <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            {/* Decorative Technical Detail - Tucked in corner */}
+            <div className="absolute bottom-6 right-8 hidden lg:block opacity-20 font-mono text-[9px] uppercase text-gray-900 tracking-tighter">
+              Node: CMRIT_HYD // v0.1.2
             </div>
           </div>
         </div>
       </section>
-      
+
       {/* NEW: MODERN BLACK QUOTE SECTION (Replacing Social Proof Marquee) */}
       <section id="quote-section" className="w-full py-12">
         <Card className="p-8 md:p-12 text-center relative overflow-hidden">
-            {/* Background element for visual interest, subtle pattern */}
-            <div className="absolute inset-0 -z-10 opacity-5" aria-hidden>
-                <div className="w-full h-full bg-no-repeat bg-center" style={{ backgroundImage: "radial-gradient(circle at center, #ffffff 1px, transparent 1px)", backgroundSize: "10px 10px" }}></div>
-            </div>
+          {/* Background element for visual interest, subtle pattern */}
+          <div className="absolute inset-0 -z-10 opacity-5" aria-hidden>
+            <div className="w-full h-full bg-no-repeat bg-center" style={{ backgroundImage: "radial-gradient(circle at center, #ffffff 1px, transparent 1px)", backgroundSize: "10px 10px" }}></div>
+          </div>
 
-            <p className="text-xl sm:text-2xl font-light italic text-muted max-w-4xl mx-auto leading-relaxed">
-                &ldquo;The greatest value of a <span className='text-[color:var(--accent)] font-medium not-italic'>picture</span> is when it forces us to notice what we never expected to <span className='text-[color:var(--accent)] font-medium not-italic'>see</span>.&rdquo;
-            </p>
-            <footer className="mt-6 text-sm sm:text-base font-semibold text-foreground">
-                — John Tukey, <span className='text-muted font-normal'>Statistician</span>
-            </footer>
+          <p className="text-xl sm:text-2xl font-light italic text-muted max-w-4xl mx-auto leading-relaxed">
+            &ldquo;The greatest value of a <span className='text-[color:var(--accent)] font-medium not-italic'>picture</span> is when it forces us to notice what we never expected to <span className='text-[color:var(--accent)] font-medium not-italic'>see</span>.&rdquo;
+          </p>
+          <footer className="mt-6 text-sm sm:text-base font-semibold text-foreground">
+            — John Tukey, <span className='text-muted font-normal'>Statistician</span>
+          </footer>
         </Card>
       </section>
-      
+
       {/* --- START REPLICATED: LATEST NEWS SECTION (Based on Udbhav Magazine) --- */}
       <Section title="Latest News" subtitle="Current Events & Releases">
         <div id="latest-news" className="grid md:grid-cols-3 gap-5 items-stretch">
-          
+
           {/* Featured News Card (Magazine Release Style) - Left Column */}
           <Card className="p-0 md:col-span-1 overflow-hidden h-full flex flex-col" style={{ border: '1px solid var(--accent)', background: 'linear-gradient(160deg, color-mix(in oklab, var(--accent) 20%, #0a0a0a) 0%, #0a0a0a 70%)' }}>
             <div className="p-8 flex-grow">
@@ -272,34 +302,34 @@ export default function Home() {
           {/* Other Highlights Card (Issue Highlights Style) - Right Columns */}
           <Card className="p-6 md:col-span-2 flex flex-col justify-between">
             <div className='flex-grow'>
-                <h3 className="text-xl font-medium mb-3">Upcoming <span className='text-[color:var(--accent)]'>Highlights</span></h3>
-                
-                {/* Secondary News Item (Live CodeX) */}
-                <a href={secondaryNews.link} target="_blank" rel="noopener noreferrer" className="block p-4 rounded-lg transition-colors duration-200 hover:bg-white/[0.05] border border-white/[0.12] hover:border-[color:var(--accent)] group">
-                    <div className='flex items-center justify-between'>
-                        <h4 className="text-lg font-bold text-foreground group-hover:text-[color:var(--accent)] transition-colors">
-                            {secondaryNews.title}
-                        </h4>
-                        <span className="px-3 py-1 text-xs font-bold uppercase rounded-full bg-red-600 text-white animate-pulse">
-                            {secondaryNews.tag}
-                        </span>
-                    </div>
-                    <p className="mt-1 text-sm text-muted">{secondaryNews.description}</p>
-                    <p className="mt-2 text-xs font-semibold text-muted/80">Date: {secondaryNews.date}</p>
-                </a>
+              <h3 className="text-xl font-medium mb-3">Upcoming <span className='text-[color:var(--accent)]'>Highlights</span></h3>
 
-                {/* Placeholder/Call-to-Action for other news/events */}
-                <div className="mt-6 space-y-3">
-                    <h4 className="text-base font-semibold text-foreground">Other Key Events:</h4>
-                    <ul className="grid sm:grid-cols-2 gap-2 text-sm text-muted">
-                        <li>• Mentorship Program Launch</li>
-                        <li>• Data Ethics Seminar Series</li>
-                        <li>• Annual Tech Project Showcase</li>
-                        <li>• Next Workshop: Big Data with Spark</li>
-                    </ul>
+              {/* Secondary News Item (Live CodeX) */}
+              <a href={secondaryNews.link} target="_blank" rel="noopener noreferrer" className="block p-4 rounded-lg transition-colors duration-200 hover:bg-white/[0.05] border border-white/[0.12] hover:border-[color:var(--accent)] group">
+                <div className='flex items-center justify-between'>
+                  <h4 className="text-lg font-bold text-foreground group-hover:text-[color:var(--accent)] transition-colors">
+                    {secondaryNews.title}
+                  </h4>
+                  <span className="px-3 py-1 text-xs font-bold uppercase rounded-full bg-red-600 text-white animate-pulse">
+                    {secondaryNews.tag}
+                  </span>
                 </div>
+                <p className="mt-1 text-sm text-muted">{secondaryNews.description}</p>
+                <p className="mt-2 text-xs font-semibold text-muted/80">Date: {secondaryNews.date}</p>
+              </a>
+
+              {/* Placeholder/Call-to-Action for other news/events */}
+              <div className="mt-6 space-y-3">
+                <h4 className="text-base font-semibold text-foreground">Other Key Events:</h4>
+                <ul className="grid sm:grid-cols-2 gap-2 text-sm text-muted">
+                  <li>• Mentorship Program Launch</li>
+                  <li>• Data Ethics Seminar Series</li>
+                  <li>• Annual Tech Project Showcase</li>
+                  <li>• Next Workshop: Big Data with Spark</li>
+                </ul>
+              </div>
             </div>
-            
+
             <div className="mt-8 text-center border-t border-white/[0.12] pt-4">
               <Button variant="outline" asChild className="w-full border-white/[0.3]"><a href="/events">View All Events & News</a></Button>
             </div>
@@ -340,7 +370,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-foreground mb-4">
                   {pillar.id}. <span className='text-[color:var(--accent)]'>{pillar.pillar.split(' ')[0]}</span> {pillar.pillar.substring(pillar.pillar.indexOf(' ') + 1)}
                 </h3>
-                
+
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                   {pillar.activities.map((activity, activityIndex) => (
                     <div key={activityIndex} className="space-y-2">
@@ -357,7 +387,7 @@ export default function Home() {
                 </div>
               </div>
             ))}
-            
+
             <p className="pt-6 text-sm text-muted border-t border-white/[0.1]">
               We look forward to welcoming you to the Data Science Society and embarking on an
               enriching journey of data discovery and innovation!
@@ -378,7 +408,7 @@ export default function Home() {
               <h3 className="text-3xl font-bold tracking-tight text-foreground">
                 Our <span className='text-[color:var(--accent)]'>Vision</span> & Agenda
               </h3>
-              
+
               <div className="text-sm text-muted">
                 <h4 className="font-semibold text-foreground mb-2">The Data Science Society: A Departmental Initiative by CSE(DS)</h4>
                 <p>
@@ -418,7 +448,7 @@ export default function Home() {
 
       {/* EVENTS SECTION - Title reverted to string */}
       <Section title="Upcoming Events" subtitle="What's happening next">
-        <div id="events" className="grid lg:grid-cols-1 gap-6"> 
+        <div id="events" className="grid lg:grid-cols-1 gap-6">
           <Card className="p-6">
             <h3 className="text-lg font-semibold mb-4">Events We Will Be <span className='text-[color:var(--accent)]'>Conducting</span></h3>
             <p className="text-sm text-muted mb-6">
@@ -436,69 +466,62 @@ export default function Home() {
               The Data Science Society will regularly update its event schedule and communicate details through official channels.
             </p>
             <div className="mt-6 text-center">
-                <Button variant="outline" asChild className="w-full border-white/[0.3]"><a href="/events">View All Events</a></Button>
+              <Button variant="outline" asChild className="w-full border-white/[0.3]"><a href="/events">View All Events</a></Button>
             </div>
           </Card>
         </div>
       </Section>
 
-      {/* UPDATED TEAM SECTION: Uses the structure from the Team Page and Next.js Image. Height increased to h-80. */}
-      <Section title="Meet the Team" subtitle="People behind the club">
-        <div id="team" className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {teamMembers.slice(0, 4).map((member) => (
-            <Card key={member.id} className="relative p-0 overflow-hidden">
-                {/* Image Section - **HEIGHT INCREASED TO h-80** */}
-                <div className="relative h-80 w-full"> 
-                    {/* Replaced <img> with Next.js <Image /> component for performance */}
-                    <Image 
-                      src={member.imageUrl} 
-                      alt={member.name} 
-                      fill // Use fill for dynamic sizes defined by the parent div
-                      style={{ objectFit: 'cover' }} 
-                      className="grayscale transition-opacity duration-300 hover:grayscale-0"
-                      sizes="(max-width: 768px) 50vw, 25vw"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+      <Section title="Meet the Team" subtitle="The architects of our community">
+        <div id="team" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {teamMembers.slice(0, 4).map((member, index) => (
+            <Card
+              key={member.id}
+              className="group relative p-0 overflow-hidden bg-[#111] border-white/[0.05] transition-all duration-500 hover:border-[color:var(--accent)]/50 hover:-translate-y-2"
+            >
+              {/* Monospace Index Decor (// 01, // 02) */}
+              <div className="absolute top-4 left-4 z-20 font-mono text-[10px] text-white/30 tracking-widest group-hover:text-[color:var(--accent)] transition-colors">
+          // 0{index + 1}
+              </div>
+
+              {/* Image Section - Premium h-96 height */}
+              <div className="relative h-96 w-full overflow-hidden">
+                <Image
+                  src={member.imageUrl}
+                  alt={member.name}
+                  fill
+                  className="object-cover grayscale transition-all duration-700 ease-in-out group-hover:grayscale-0 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                />
+
+                {/* Subtle Shadow Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity duration-500"></div>
+
+                {/* Glass-morphism Social Bar - Slides up on Hover */}
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-4 px-4 py-2 rounded-full bg-black/40 backdrop-blur-md border border-white/10 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
+                  <a href={member.socials.linkedin} target="_blank" className="text-white/70 hover:text-[color:var(--accent)] transition-colors">
+                    <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
+                  </a>
+                  <a href={`mailto:${member.socials.email}`} className="text-white/70 hover:text-[color:var(--accent)] transition-colors">
+                    <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" /></svg>
+                  </a>
+                  <a href={member.socials.twitter} target="_blank" className="text-white/70 hover:text-[color:var(--accent)] transition-colors">
+                    <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932L18.901 1.153ZM17.61 20.644h2.039L6.486 3.24H4.298L17.61 20.644Z" /></svg>
+                  </a>
                 </div>
-                
-                {/* Info Section (Name, Role, Contact) - Now uses the full TeamCard structure */}
-                <div className="p-4 space-y-2">
-                    <h4 className="text-lg font-bold text-foreground">{member.name}</h4>
-                    <p className="text-sm text-[color:var(--accent)]">{member.title}</p>
-                    
-                    {/* Contact Links */}
-                    <div className="flex gap-3 pt-2">
-                        {/* LinkedIn Icon */}
-                        <a href={member.socials.linkedin} target="_blank" rel="noopener noreferrer" 
-                           className="text-muted hover:text-[color:var(--accent)] transition-colors" 
-                           aria-label={`LinkedIn profile for ${member.name}`}>
-                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-5 h-5 fill-current">
-                            <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.3 38.5-38.5 38.5zm282.7 243h-66.4V297.8c0-26.1-23.4-48.5-52.9-48.5-29.4 0-51.4 22.3-51.4 48.5V416h-66.4V202.2h66.3v26.7h.9c8.7-18.9 33.4-46.7 88.5-46.7 66.8 0 94.5 43.1 94.5 98.4V416z"/>
-                           </svg>
-                        </a>
-                        {/* Email Icon */}
-                        <a href={`mailto:${member.socials.email}`} 
-                           className="text-muted hover:text-[color:var(--accent)] transition-colors" 
-                           aria-label={`Email ${member.name}`}>
-                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current">
-                            <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.6 27.4 8.6 38.8 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V392c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 340.8c-20.9 15.7-47.5 15.7-68.4 0L0 176z"/>
-                           </svg>
-                        </a>
-                        {/* Twitter/X Icon */}
-                         <a href={member.socials.twitter} target="_blank" rel="noopener noreferrer" 
-                           className="text-muted hover:text-[color:var(--accent)] transition-colors" 
-                           aria-label={`X/Twitter profile for ${member.name}`}>
-                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current">
-                            <path d="M389.2 48h70.6L305.6 224.2 487 464H381.5L248.8 296.7 113.1 464H41.6L201.2 284.4 21.6 48H138.1L257.4 205.1 389.2 48zM364.4 421.8h39.7L132.3 90.8H88.3L364.4 421.8z"/>
-                           </svg>
-                        </a>
-                    </div>
-                </div>
+              </div>
+
+              {/* Text Section */}
+              <div className="p-6 text-center">
+                <h4 className="text-lg font-bold tracking-tight text-white mb-1 transition-colors group-hover:text-[color:var(--accent)]">
+                  {member.name}
+                </h4>
+                <p className="font-mono text-[11px] uppercase tracking-widest text-gray-500 group-hover:text-gray-300 transition-colors">
+                  {member.title}
+                </p>
+              </div>
             </Card>
           ))}
-        </div>
-        <div className="mt-8 text-center">
-            <Button variant="outline" asChild><a href="/team">Meet the full team</a></Button>
         </div>
       </Section>
 
@@ -514,7 +537,7 @@ export default function Home() {
       {/* REDESIGNED UDBHAV MAGAZINE SECTION (Original structure used as inspiration) */}
       <Section title="Udbhav Magazine" subtitle="The official DSS publication">
         <div id="udbhav" className="grid md:grid-cols-3 gap-5 items-stretch">
-          
+
           {/* Featured Magazine Cover Card */}
           <Card className="p-0 md:col-span-1 overflow-hidden h-full flex flex-col" style={{ border: '1px solid var(--accent)', background: 'linear-gradient(160deg, color-mix(in oklab, var(--accent) 20%, #0a0a0a) 0%, #0a0a0a 70%)' }}>
             <div className="p-8 flex-grow">
@@ -535,21 +558,21 @@ export default function Home() {
           {/* Issue Highlights Card - UPDATED TO USE magazineContent DATA */}
           <Card className="p-6 md:col-span-2 flex flex-col justify-between">
             <div className='flex-grow'>
-                <h3 className="text-xl font-medium mb-3">Inside this <span className='text-[color:var(--accent)]'>Issue</span></h3>
-                <div className="grid sm:grid-cols-2 gap-4">
-                    {/* Dynamic list for column 1 */}
-                    <ul className="mt-3 grid gap-2 text-sm space-y-1">
-                      {articleCol1.map((item, index) => (
-                        <li key={`col1-${index}`}>• {item}</li>
-                      ))}
-                    </ul>
-                    {/* Dynamic list for column 2 */}
-                    <ul className="mt-3 grid gap-2 text-sm space-y-1">
-                        {articleCol2.map((item, index) => (
-                        <li key={`col2-${index}`}>• {item}</li>
-                      ))}
-                    </ul>
-                </div>
+              <h3 className="text-xl font-medium mb-3">Inside this <span className='text-[color:var(--accent)]'>Issue</span></h3>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {/* Dynamic list for column 1 */}
+                <ul className="mt-3 grid gap-2 text-sm space-y-1">
+                  {articleCol1.map((item, index) => (
+                    <li key={`col1-${index}`}>• {item}</li>
+                  ))}
+                </ul>
+                {/* Dynamic list for column 2 */}
+                <ul className="mt-3 grid gap-2 text-sm space-y-1">
+                  {articleCol2.map((item, index) => (
+                    <li key={`col2-${index}`}>• {item}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
             <div className="mt-5 text-xs text-muted border-t border-white/[0.12] pt-4">
               Contributors: {magazineContent.contributors}
@@ -604,27 +627,27 @@ export default function Home() {
 
       {/* REPLACED: Original Join the Club section is replaced with this prominent Quote/Final CTA */}
       <Section title="Ready to Lead?" subtitle="Your journey in Data Science starts here">
-        <Card className="relative p-10 md:p-16 text-center overflow-hidden" 
-              style={{ 
-                background: 'color-mix(in oklab, var(--accent) 15%, #0a0a0a)', 
-                border: '1px solid var(--accent)',
-                boxShadow: '0 0 40px rgba(var(--accent-rgb), 0.2)' // Added a glow for prominence
-              }}>
-            
-            {/* Quote (Motto) */}
-            <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground max-w-4xl mx-auto">
-                &quot;Innovate. Analyze. <span className='text-[color:var(--accent)]'>Lead.</span>&quot;
-            </h3>
-            <p className="mt-4 text-lg text-muted max-w-2xl mx-auto">
-                Join the Data Science Society and transform your ideas into industry-leading projects.
-            </p>
-            
-            {/* Final CTA Button */}
-            <div className="mt-8 flex justify-center gap-4">
-                <Button asChild className="px-8 py-4 text-lg font-semibold">
-                    <a href="/join">Become a Member Now</a>
-                </Button>
-            </div>
+        <Card className="relative p-10 md:p-16 text-center overflow-hidden"
+          style={{
+            background: 'color-mix(in oklab, var(--accent) 15%, #0a0a0a)',
+            border: '1px solid var(--accent)',
+            boxShadow: '0 0 40px rgba(var(--accent-rgb), 0.2)' // Added a glow for prominence
+          }}>
+
+          {/* Quote (Motto) */}
+          <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground max-w-4xl mx-auto">
+            &quot;Innovate. Analyze. <span className='text-[color:var(--accent)]'>Lead.</span>&quot;
+          </h3>
+          <p className="mt-4 text-lg text-muted max-w-2xl mx-auto">
+            Join the Data Science Society and transform your ideas into industry-leading projects.
+          </p>
+
+          {/* Final CTA Button */}
+          <div className="mt-8 flex justify-center gap-4">
+            <Button asChild className="px-8 py-4 text-lg font-semibold">
+              <a href="/join">Become a Member Now</a>
+            </Button>
+          </div>
         </Card>
       </Section>
 
