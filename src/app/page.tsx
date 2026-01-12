@@ -481,7 +481,7 @@ export default function Home() {
             >
               {/* Monospace Index Decor (// 01, // 02) */}
               <div className="absolute top-4 left-4 z-20 font-mono text-[10px] text-white/30 tracking-widest group-hover:text-[color:var(--accent)] transition-colors">
-          // 0{index + 1}
+                {'//'} 0{index + 1}
               </div>
 
               {/* Image Section - Premium h-96 height */}
